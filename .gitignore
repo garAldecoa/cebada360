@@ -216,3 +216,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==============================
+# CEBADA360 - Datos
+# ==============================
+
+# Ignorar todo el contenido de las carpetas de datos
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Excepto archivos para conservar las carpetas
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Modelos entrenados
+models/*
+!models/.gitkeep
+
+# Outputs generados
+outputs/figures/*
+outputs/tables/*
+!outputs/figures/.gitkeep
+!outputs/tables/.gitkeep
+
+# VS Code
+.vscode/
